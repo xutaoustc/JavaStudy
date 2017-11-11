@@ -15,5 +15,9 @@ public class Basic {
         InputStream inputStream = Basic.class.getResourceAsStream("/" + "test.xml");
         Reader reader = new InputStreamReader(inputStream);
         System.out.println((char)reader.read());
+
+        //System.getProperty(“name”)
+        // java -Dname=zhuhui
+        System.out.println( System.getProperty("name") );
     }
 }

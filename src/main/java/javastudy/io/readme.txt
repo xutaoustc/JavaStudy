@@ -50,3 +50,6 @@
 
     但是要指定编码表，只有转换流可以指定。所以要使用OutputStreamWriter,而该转换流对象需要接收一个字节输出流。所以改用FileOutputStream
     同样的，如果要读取指定编码的文件，就需要使用InputStreamReader，默认的FileReader使用的是默认编码
+
+
+File类：用来将文件或者文件夹封装成对象。方便对文件与文件夹的属性信息进行操作。   流操作只能操作文件的数据

@@ -17,8 +17,8 @@
     不是：字节流
 3. 当体系明确后，再明确要使用哪个具体的对象
     通过设备来进行区分
-    源设备：内存，硬盘，键盘
-    目的设备：内存，硬盘，控制台
+    源设备：内存(ArrayStream)，硬盘，键盘
+    目的设备：内存(ArrayStream)，硬盘，控制台
 4， 是否需要提高效率
 
 例1：将一个文本中的数据存储到另一个文件中。复制文件。
@@ -50,6 +50,13 @@
 
     但是要指定编码表，只有转换流可以指定。所以要使用OutputStreamWriter,而该转换流对象需要接收一个字节输出流。所以改用FileOutputStream
     同样的，如果要读取指定编码的文件，就需要使用InputStreamReader，默认的FileReader使用的是默认编码
+
+
+IO包中的其他类
+操作基本数据类型  DataInputStream DataOutputStream
+操作字节数组   ByteArrayInputStream ByteArrayOutputStream
+操作字符数组   CharArrayReader CharArrayWriter
+操作字符串     StringReader StringWriter
 
 
 File类：用来将文件或者文件夹封装成对象。方便对文件与文件夹的属性信息进行操作。   流操作只能操作文件的数据

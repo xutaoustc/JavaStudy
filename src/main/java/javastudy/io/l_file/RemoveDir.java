@@ -1,4 +1,4 @@
-package javastudy.io.i_file;
+package javastudy.io.l_file;
 
 import java.io.File;
 import java.io.IOException;

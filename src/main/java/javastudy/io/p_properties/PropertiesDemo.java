@@ -1,4 +1,4 @@
-package javastudy.io.m_properties;
+package javastudy.io.p_properties;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

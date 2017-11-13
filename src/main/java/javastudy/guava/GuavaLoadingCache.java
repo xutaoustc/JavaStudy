@@ -9,11 +9,6 @@ import java.util.concurrent.TimeUnit;
 public class GuavaLoadingCache {
 
     public static void main(String[]args) throws ExecutionException, InterruptedException {
-        String key = "a_b_c_d_e";
-
-
-        System.out.println(key.substring(0,key.lastIndexOf("_")));
-
         //缓存接口这里是LoadingCache，LoadingCache在缓存项不存在时可以自动加载缓存
         LoadingCache<Integer,String> studentCache
                 //CacheBuilder的构造函数是私有的，只能通过其静态方法newBuilder()来获得CacheBuilder的实例
